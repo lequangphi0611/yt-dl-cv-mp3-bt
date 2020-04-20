@@ -1,0 +1,21 @@
+{
+  "name": "yt-dl-cv-mp3-bt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/lequangphi0611/yt-dl-cv-mp3-bt"
+  },
+  "author": "PhiLQ",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "youtube-dl": "^3.0.2"
+  }
+}
