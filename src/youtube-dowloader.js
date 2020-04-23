@@ -30,7 +30,7 @@ const onDowload = (url, dir, onCompleted) => {
     });
 
     video.on('error', (e) => {
-        console.log(e);
+        console.log(`${url} is error`, e);
         output = null;
     })
 

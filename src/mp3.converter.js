@@ -20,7 +20,8 @@ module.exports.convert = (source, output) => {
             console.log('file has been converted successfully');
         })
         .on('error', function (err) {
-            console.log('an error happened: ' + err.message);
+            console.log('An error happened: ' + err.message);
+            console.log('Cannot convert file ' + source);
         })
         .saveToFile(output);
 }
