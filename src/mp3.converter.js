@@ -17,10 +17,10 @@ module.exports.convert = (source, output) => {
     proc
         .toFormat(MIME_TYPE)
         .on('end', function () {
-            console.log('file has been converted successfully');
+            console.log(`${source} has been converted successfully`);
         })
         .on('error', function (err) {
-            console.log('An error happened: ' + err.message);
+            console.log('An error happened: ' + err.message, output);
             console.log('Cannot convert file ' + source);
         })
         .saveToFile(output);
