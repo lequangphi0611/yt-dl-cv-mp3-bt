@@ -37,7 +37,8 @@ const onDowload = (url, dir, onCompleted, retry) => {
         console.log('filename: ' + _filename + ' already downloaded.')
     });
 
-    video.on('error', () => {
+    video.on('error', (e) => {
+        console.log(e.message);
         if (retrys > 0) {
             console.log(`Cannot download ${filename} ! Retrying ${5 - --retrys}`);
             onDowload(url, dir, onCompleted, retrys);

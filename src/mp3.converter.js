@@ -11,7 +11,7 @@ module.exports.convert = (source, output) => {
         nolog: true
     });
 
-    const ffmpegPath = 'C:\\Program Files\\ffmpeg-20200420-cacdac8-win64-static\\bin\\ffmpeg.exe';
+    const ffmpegPath = `${__dirname}\\ffmpeg\\bin\\ffmpeg.exe`;
     proc.setFfmpegPath(ffmpegPath);
 
     proc
