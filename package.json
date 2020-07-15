@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc && Xcopy /E /I /S \"vendor\" \"dist\\vendor\"",
-    "start": "npm run build && node dist/index.js",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,7 @@
     "dotenv": "^8.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "rxjs": "^6.6.0",
+    "ts-node": "^8.10.2",
     "ytdl-core": "^3.1.2"
   },
   "devDependencies": {
