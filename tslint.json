@@ -12,7 +12,15 @@
         "no-setter-return": true,
         "dot-location": true,
         "eqeqeq": true,
-        "no-else-return": true
+        "no-else-return": true,
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ],
+        "no-var-requires": false,
+        "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }
