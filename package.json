@@ -2,9 +2,10 @@
   "name": "yt-dl-cv-mp3-bt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js",
+    "build": "rm -rf dist && tsc && Xcopy /E /I /S \"vendor\" \"dist\\vendor\"",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +17,15 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "fluent-ffmpeg": "^2.1.2",
-    "youtube-dl": "^3.0.2"
+    "rxjs": "^6.6.0",
+    "winston": "^3.3.3",
+    "ytdl-core": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^8.10.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
   }
 }

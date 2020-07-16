@@ -1,0 +1,26 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-console": true,
+        "no-async-promise-executor": true,
+        "no-await-in-loop": true,
+        "no-duplicate-case": true,
+        "no-setter-return": true,
+        "dot-location": true,
+        "eqeqeq": true,
+        "no-else-return": true,
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ],
+        "no-var-requires": false,
+        "object-literal-sort-keys": false
+    },
+    "rulesDirectory": []
+}
