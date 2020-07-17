@@ -19,7 +19,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "rxjs": "^6.6.0",
     "winston": "^3.3.3",
-    "ytdl-core": "^3.1.2"
+    "youtube-dl": "^3.0.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.23",
